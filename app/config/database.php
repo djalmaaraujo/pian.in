@@ -7,7 +7,7 @@
  */
 
 Config::write("database", array(
-    "production" => array(
+    "development" => array(
         "driver" => "mysql",
         "host" => "localhost",
         "user" => "root",
@@ -15,12 +15,12 @@ Config::write("database", array(
         "database" => "pianin",
         "prefix" => ""
     ),
-    "a" => array(
-        "driver" => "mysql",
-        "host" => "127.0.0.1",
-        "user" => "pianin_curtin",
-        "password" => "^ZPA$xkAGqLW",
-        "database" => "pianin_db",
+    "production" => array(
+        "driver" => "",
+        "host" => "",
+        "user" => "",
+        "password" => "",
+        "database" => "",
         "prefix" => ""
     )
 ));

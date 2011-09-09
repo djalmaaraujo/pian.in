@@ -12,7 +12,7 @@
 class AppController extends Controller {
 	
 	public $components = array();
-	public $helpers = array('Html', "Form", 'Date');
+	public $helpers = array('Html', "Form");
 	public $layout = 'default';
 	public $arrView = null;
 	
