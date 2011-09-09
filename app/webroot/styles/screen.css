@@ -1,0 +1,36 @@
+/* reset */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {margin:0;padding:0;border:0;outline:0;font-weight:inherit;font-style:inherit;font-size:100%;vertical-align:baseline;text-decoration:none}
+strong{font-weight:bold;}
+:focus{outline:0}
+body{font-family:Arial, Helvetica, sans-serif;font-size:13px}
+ol, ul{list-style:none}
+table{border-collapse: separate;border-spacing:0}
+caption, th, td{text-align: left;font-weight: normal}
+blockquote:before, blockquote:after, q:before, q:after {content: ""}
+blockquote, q{ quotes: "" ""}
+html{overflow:-moz-scrollbars-vertical}
+a{color:#989898}
+a:hover{text-decoration:none;}
+.clear {clear: both;}
+.radius{-moz-border-radius: 8px;border-radius: 8px;-webkit-border-radius: 8px;}
+.shadow{box-shadow:0px 0px -10px #575757;-moz-box-shadow:0px 0px 1px #575757;-webkit-box-shadow:0px 0px 1px #575757;}
+/* global */
+
+h1 {width:249px; height:65px; margin-bottom:10px}
+body {font-family:Arial, sans-serif; font-size:12px; color:#000; background:url(/images/bg.jpg) #e7e7e7 left top no-repeat}
+p {margin:0 0 15px 0}
+/* container */
+#container {width:700px; padding:50px}
+#container form input {border:none; float:left; margin-bottom:10px; }
+#container form input[type="text"] {width:480px; padding:10px; background:#fff; font-size:14px; color:#000; margin:0 7px 10px 0; height:20px}
+#container form input[type="submit"] {background:#000; color:#fff; text-align:center; font-weight:bold; width:95px; height:40px; cursor:pointer}
+
+#footer {padding:40px 0 0 0}
+#footer ul {height:16px; display:block; clear:both; margin-bottom:10px}
+#footer ul li a {background-image:url(/images/social.png); background-repeat:no-repeat; width:16px; height:16px; float:left; margin-right:7px; text-indent:-20000px}
+#footer ul li a.twitter {background-position:0 0}
+#footer ul li a.facebook {background-position:-21px 0}
+#footer ul li a.pianolab {background-position:-44px 0; width:90px}
+
+.result, .alert {background:#fff; margin:20px 0 20px; padding:10px; color:#000; font-size:14px; display:block; width:400px}
+.result {font-size:18px; font-weight:bold}
