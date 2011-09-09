@@ -3,7 +3,13 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<title><?php echo $page_title; ?></title>
-	<meta name="author" content="Pianolab">
+	<meta name="author" content="PIANOLAB Agência Interativa | +55 (81) 3427-3660" /> 
+	<meta name="reply-to" content="agencia@pianolab.com.br"> 
+	<meta name="creator" content="PIANOLAB Agência Interativa | +55 (81) 3427-3660" /> 
+	<meta name="creator.adress" content="agencia@pianolab.com.br" /> 
+	<meta name="robots" content="index,follow" /> 
+	<link rel="SHORTCUT ICON" href="http://www.pianolab.com.br/images/favicon.ico" /> 
+	<link rel="apple-touch-icon" href="http://www.pianolab.com.br/images/favicon2.png" />
 	<?php echo $html->stylesheet(array("screen.css")); ?>
 	<?php echo $html->script(array("jquery-1.6.1.min.js", "application.js")); ?>
 	<?php echo $this->element('shared/analytics'); ?>
