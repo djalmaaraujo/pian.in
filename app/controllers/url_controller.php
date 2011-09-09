@@ -46,8 +46,8 @@ class UrlController extends AppController {
 		if ($original = $this->Url->firstByShort($url)) {
 			$this->countVisit($original);
 			header('HTTP/1.1 301 Moved Permanently');
-	        header('Location: ' . $original['original']);
-	        exit;
+			header('Location: ' . $original['original']);
+			exit;
 		} else {
 			$this->setError('URL inválida, tente novamente');
 			$this->redirect('/');
