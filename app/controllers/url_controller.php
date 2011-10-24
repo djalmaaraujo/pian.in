@@ -5,19 +5,38 @@ class UrlController extends AppController {
 	public $url = null;
 	public $newUrl = null;
 	
-	public function index($shortened = null) {
+	public function index() {
+		# Output formats
+		$ext = end(explode('.', end(explode('/', $this->param('here')))));
+		
 		if ($this->data) {
 			$this->url = trim($this->data['url']);
 			if ($this->isValid()) {
 				$url = (!$urlCheck = $this->Url->firstByOriginal($this->url)) ? $this->generateUrl() : $urlCheck;
-				Session::writeFlash('url.success', $this->getFullUrl($url));
+				$successUrl = $this->getFullUrl($url);
+				Session::writeFlash('url.success', $successUrl);
 			} else {
 				$this->setError('URL inválida, tente novamente.');
 			}
-			$this->redirect('/');
+			
+			if ($ext == 'htm') {
+				$this->redirect('/');
+			} else {
+				$this->params['extension'] = $ext;
+				$this->autoLayout = false;
+				if ($successUrl) {
+					$this->set('result', $successUrl);
+				} else {
+					$this->set('result', false);
+				}
+			}
 			
 		} else {
-			if ($shortened) $this->goToUrl();
+			if ($ext == '') {
+				if ($shortened) $this->goToUrl();
+			} else {
+				$this->redirect('/');
+			}
 		}
 	}
 	

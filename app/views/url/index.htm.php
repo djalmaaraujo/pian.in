@@ -1,6 +1,6 @@
 <?php
 if (!$success = Session::flash('url.success')):
-	echo $form->create('');
+	echo $form->create('/api/short.json');
 	echo $form->input('url', array(
 		'type' => 'text',
 		'label' => false,
